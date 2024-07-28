@@ -12,7 +12,7 @@
     function addTodo(): void {
         console.log("Add", uid, title);
         let coll = collection(firestore, "users", uid, "todos");
-        addDoc(coll, { title });
+        addDoc(coll, { title, timestamp: Date.now() });
         title = "";
     }
 </script>

@@ -10,7 +10,7 @@
 </script>
 
 <div class="navbar">
-    <h1 class="title">My Todo App</h1>
+    <h1 class="title">My super cool Todo App</h1>
     <SignedOut let:auth>
         <form>
             <input type="text" placeholder="Email" bind:value={email} />

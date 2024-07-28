@@ -17,13 +17,13 @@
 
 <h2>Todos</h2>
 
-<Collection ref="users/{uid}/todos" let:data let:count>
+<Collection ref="users/{uid}/todos" let:data={todos} let:count>
     <p>You have {count} todos.</p>
 
     <AddTodo {uid}></AddTodo>
 
     <div class="todos">
-        {#each data as todo}
+        {#each todos as todo}
             <div class="todo">
                 <div class="title">{todo.title}</div>
                 <div class="complete">
